@@ -1,0 +1,92 @@
+/* FAQs */
+
+.header-faqs {
+	background-image: url(/assets/hands_brain_puzzle-hero.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin-bottom: 100px;
+
+	@include breakpoint-mobile {
+		margin-bottom: 15px;
+		background-image: url(/assets/hands_brain_puzzle-mobile_485x600.webp);
+	}
+}
+
+.faqs--hero__text h1 {
+	font-weight: 700;
+	font-size: 120px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.accordion {
+	max-width: 1000px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	overflow: hidden;
+	background: $green-primary-beagle;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.accordion__label,
+.accordion__content {
+	padding: 14px 20px;
+}
+
+.accordion__label {
+	display: block;
+	color: #ffffff;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s;
+}
+
+.accordion__label:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	width: 12px;
+	height: 11px;
+	background-image: url(/assets/icons/arrow-down-circle-line.svg);
+	background-size: contain;
+	transition: transform 0.4s;
+}
+
+.accordion__content {
+	background: #ffffff;
+	line-height: 1.6;
+	font-size: 0.85em;
+	display: none;
+}
+
+.accordion__input {
+	display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+	display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+	transform: translateY(-50%) rotate(0.5turn);
+}
+
+.privacy_link {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.privacy_link a {
+	color: var(--Green-primary);
+	text-decoration: none;
+	font-weight: 700;
+}

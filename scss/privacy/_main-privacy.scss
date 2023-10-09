@@ -1,0 +1,25 @@
+.header_privacy {
+	background-color: $green-nav-boston-terrier;
+}
+
+.privacy-container {
+	background-color: $green-nav-boston-terrier;
+	padding: 20px 10% 50px 10%;
+
+	h2 {
+		margin: 30px 0 5px 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: $green-viridian-boxer;
+
+		&:hover {
+			color: $cta-button-cocker-spaniel;
+		}
+	}
+}
+
+.privacy-footer {
+	background-color: $green-nav-boston-terrier;
+}

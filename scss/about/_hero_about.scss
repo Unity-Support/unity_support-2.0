@@ -1,0 +1,23 @@
+.header_about {
+	background-image: url(/assets/heads_aboutus-hero.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	border-bottom: 10px solid $green-viridian-boxer;
+}
+
+#main-nav_about {
+	gap: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header_about {
+		background-size: cover;
+		height: 300px;
+
+		.about-title {
+			font-weight: 700;
+			font-size: 60px;
+		}
+	}
+}

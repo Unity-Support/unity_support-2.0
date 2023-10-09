@@ -1,0 +1,74 @@
+.contact-container {
+	display: flex;
+	justify-content: center;
+	gap: 200px;
+	margin-top: 150px;
+
+	@include breakpoint-mobile {
+		flex-direction: column;
+		gap: 10px;
+		margin: 0;
+		padding: 20px;
+
+		a {
+			font-size: 20px;
+		}
+	}
+}
+
+.text-wrapper {
+	font-size: 24px;
+
+	h1 {
+		font-size: 100px;
+		line-height: 100px;
+		margin-bottom: 50px;
+	}
+
+	img {
+		width: 30px;
+		height: 30px;
+	}
+
+	// Icons / Alignment
+
+	#icon-mail {
+		position: relative;
+		/* Adjust these values accordingly */
+		top: 0px;
+		left: 5px;
+	}
+
+	#icon-phone {
+		position: relative;
+		/* Adjust these values accordingly */
+		top: 2px;
+		left: 5px;
+	}
+
+	#icon-location {
+		position: relative;
+		/* Adjust these values accordingly */
+		top: -2.5px;
+		left: 5px;
+	}
+
+	p {
+		font-size: 24px;
+		margin-bottom: 50px;
+		margin-left: 20px;
+
+		a {
+			text-decoration: none;
+			color: $green-viridian-boxer;
+
+			&:hover {
+				color: $cta-button-cocker-spaniel;
+			}
+		}
+	}
+}
+
+.icon-contact {
+	display: flex;
+}

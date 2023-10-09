@@ -1,0 +1,128 @@
+//header container
+.header-main {
+	background-image: url(/assets/hands-hero-1900.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	border-bottom: 10px solid $green-nav-boston-terrier;
+	line-height: normal;
+
+	@include breakpoint-mobile {
+		background-image: url(/assets/hero-hands-mobile-485x600.webp);
+	}
+}
+
+//nav and logo
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.875rem 10%;
+	font-weight: 400;
+	font-size: 18px;
+
+	img {
+		width: 10.9375rem;
+
+		@include breakpoint-mobile {
+			margin-bottom: 20px;
+		}
+	}
+
+	@include breakpoint-mobile {
+		flex-direction: column;
+		align-items: center;
+		width: auto;
+	}
+}
+
+.main-nav__menu {
+	list-style: none;
+	background-color: $green-nav-boston-terrier;
+	width: 30.3125rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	height: 40px;
+
+	@include breakpoint-mobile {
+		width: 22.3rem;
+	}
+}
+
+.main-nav__menu li {
+	display: inline-block;
+	padding: 0rem 1.25rem;
+}
+
+.main-nav__menu li a {
+	text-decoration: none;
+	color: #222;
+	position: relative;
+	font-size: 1rem;
+}
+
+.main-nav__menu a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.25rem;
+	border-radius: 0.1875rem;
+	background-color: $green-primary-beagle;
+	bottom: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.4s ease-in-out;
+}
+
+a:hover::before {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+.main-nav__menu li a:hover {
+	color: $purple-wenge-weimaraner;
+	font-weight: 700;
+}
+
+.hero-text {
+	padding-left: 10%;
+
+	@include breakpoint-mobile {
+		padding-left: 0%;
+	}
+
+	h1 {
+		font-size: 7.3rem;
+		font-weight: 700;
+		margin-left: -6.68px;
+		margin-bottom: 0.625rem;
+
+		@include breakpoint-mobile {
+			font-size: 5.3125rem;
+			text-align: center;
+			line-height: 5rem;
+			margin-bottom: 7.1px;
+		}
+	}
+
+	p {
+		font-size: 1.25rem;
+		margin-bottom: 2.1rem;
+
+		@include breakpoint-mobile {
+			text-align: center;
+			margin-bottom: 0.9375rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 30.3125rem) {
+	.hero-text a {
+		display: flex;
+		justify-content: center;
+		width: 12.5rem;
+		margin: auto;
+	}
+}

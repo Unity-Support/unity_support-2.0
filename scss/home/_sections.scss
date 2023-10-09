@@ -1,0 +1,156 @@
+.company-headline {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+	width: 850px;
+	margin: 50px auto;
+
+	@include breakpoint-mobile {
+		width: auto;
+		padding: 10px 20px;
+		font-size: 16px;
+		margin: 10px 10px;
+
+		.company-headline p:first-child {
+			margin-top: 40px;
+		}
+	}
+}
+
+.company-headline p {
+	margin-bottom: 30px;
+
+	@include breakpoint-mobile {
+		margin-top: 50px;
+	}
+}
+
+.company-headline span {
+	font-weight: 700;
+}
+
+.scribble {
+	margin: 0 5%;
+}
+
+// Cards
+
+.card__section {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+
+	@include breakpoint-mobile {
+		flex-direction: column;
+		margin-top: 40px;
+	}
+
+	.card {
+		max-width: 450px;
+		background-color: #544f77;
+		text-align: center;
+		border-radius: 8px;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		margin-bottom: 100px;
+		margin-top: 100px;
+		padding: 50px 50px 80px 50px;
+
+		@include breakpoint-mobile {
+			width: 400px;
+			margin: 0 auto;
+
+			.card {
+				width: 400px;
+				margin: 0 auto;
+
+				h1 {
+					line-height: normal;
+					margin-bottom: 30px;
+				}
+
+				p {
+					padding: 0 10px;
+					margin-bottom: 50px;
+				}
+			}
+		}
+		&.card1 {
+			background-color: $purple-wenge-weimaraner;
+		}
+
+		&.card2 {
+			background-color: $brown-khaki-corgi;
+		}
+
+		h1 {
+			font-size: 40px;
+			font-weight: 700;
+			color: #fff;
+			padding-bottom: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			color: #fff;
+			line-height: 2rem;
+			padding-bottom: 100px;
+		}
+
+		a {
+			background-color: $cta-button-cocker-spaniel;
+			padding: 15px 35px;
+			color: #000;
+			text-decoration: none;
+			font-weight: 500;
+			border-radius: 8px;
+
+			&:hover {
+				background-color: white;
+				box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+			}
+		}
+	}
+}
+
+#provider {
+	color: $purple-wenge-weimaraner;
+}
+
+#support {
+	color: $brown-khaki-corgi;
+}
+
+//Quote
+
+.quote-section {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	background-color: $green-primary-beagle;
+	height: 370px;
+	font-size: 48px;
+	border-top: 5px solid $green-viridian-boxer;
+	border-bottom: 5px solid $green-viridian-boxer;
+
+	@include breakpoint-mobile {
+		margin-top: 50px;
+
+		.quote-section p:first-child {
+			margin: 0;
+		}
+	}
+
+	p {
+		padding: 15px;
+		width: 62.5rem;
+
+		@include breakpoint-mobile {
+			width: auto;
+			font-size: 20px;
+			line-height: 40px;
+		}
+	}
+}

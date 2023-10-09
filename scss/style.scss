@@ -1,0 +1,32 @@
+// Media Queries
+
+@import "global/mixins";
+
+// Global
+@import "global/variables";
+@import "global/global";
+@import "global/typography";
+@import "global/buttons";
+
+// Home page
+@import "home/hero";
+@import "home/sections";
+@import "home/footer";
+
+// About us page
+@import "about/hero_about";
+@import "about/sections_about";
+@import "about/header_about";
+
+// Contact page
+
+@import "contact/main-contact";
+@import "contact/form-contact";
+
+// FAQs page
+
+@import "faqs/main-faqs";
+
+// Privacy page
+
+@import "privacy/main-privacy";

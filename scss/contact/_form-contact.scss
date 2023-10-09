@@ -1,0 +1,80 @@
+.form-wrapper {
+	background: $green-primary-beagle;
+	padding: 40px 20px;
+	width: 400px;
+	height: 500px;
+	border-radius: 8px;
+	border: solid 3px #000;
+
+	@include breakpoint-mobile {
+		margin: auto;
+	}
+}
+
+.form-layout {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-content a {
+	color: $green-viridian-boxer;
+	text-decoration: none;
+}
+
+.text-content a:hover {
+	color: $cta-button-cocker-spaniel;
+}
+
+.text-content h1 {
+	font-size: 100px;
+	line-height: 100px;
+	margin-bottom: 50px;
+}
+
+.text-content p {
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+
+.text-content a {
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+
+input {
+	height: 50px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+
+	&::placeholder {
+		color: #141414;
+		font-style: italic;
+		font-size: 18px;
+	}
+
+	&[type="text"] {
+		font-size: 28px;
+		padding: 10px;
+	}
+}
+
+.message-input {
+	resize: none;
+	border: none;
+	outline: none;
+	height: 210px;
+	padding-bottom: 80px;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+
+	margin-bottom: 20px;
+}
+
+.contact-button {
+	background-color: $cta-button-cocker-spaniel;
+	border: none;
+	border-radius: 8px;
+}
