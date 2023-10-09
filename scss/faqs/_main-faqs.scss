@@ -1,7 +1,7 @@
 /* FAQs */
 
 .header-faqs {
-	background-image: url(/assets/hands_brain_puzzle-hero.webp);
+	background-image: url(../assets/hands_brain_puzzle-hero.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 400px;
@@ -9,7 +9,7 @@
 
 	@include breakpoint-mobile {
 		margin-bottom: 15px;
-		background-image: url(/assets/hands_brain_puzzle-mobile_485x600.webp);
+		background-image: url(../assets/hands_brain_puzzle-mobile_485x600.webp);
 	}
 }
 
@@ -56,7 +56,7 @@
 	right: 20px;
 	width: 12px;
 	height: 11px;
-	background-image: url(/assets/icons/arrow-down-circle-line.svg);
+	background-image: url(../assets/icons/arrow-down-circle-line.svg);
 	background-size: contain;
 	transition: transform 0.4s;
 }
