@@ -5,11 +5,26 @@
 	width: 850px;
 	margin: 50px auto;
 
+	h3 {
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-top: 50px;
+	}
+
+	P {
+		margin-top: 40px;
+	}
+
 	@include breakpoint-mobile {
 		width: auto;
 		padding: 10px 20px;
 		font-size: 16px;
 		margin: 10px 10px;
+
+		h3 {
+			font-size: 16px;
+		}
 
 		.company-headline p:first-child {
 			margin-top: 40px;
