@@ -23,3 +23,27 @@
 .privacy-footer {
 	background-color: $green-nav-boston-terrier;
 }
+
+.findability-container {
+	background-color: $green-nav-boston-terrier;
+	width: 100%;
+	padding: 20px 10% 50px 10%;
+
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 32px;
+		letter-spacing: 1px;
+		-webkit-transition: color 0.5s ease-in;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.findability-links {
+	display: flex;
+	flex-direction: column;
+	padding-top: 25px;
+}
