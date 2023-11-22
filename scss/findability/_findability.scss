@@ -1,0 +1,68 @@
+.find-body {
+	background-color: $green-nav-boston-terrier;
+}
+
+.find-header {
+	margin-top: 50px;
+
+	ul {
+		display: flex;
+		justify-content: center;
+		gap: 100px;
+		list-style: none;
+		a {
+			text-decoration: none;
+			color: black;
+			letter-spacing: 1px;
+			font-weight: 600;
+
+			&:hover {
+				color: $green-nav-boston-terrier;
+			}
+		}
+	}
+}
+
+#back-site {
+	background-color: rgb(236, 230, 223);
+	padding: 10px;
+	border-radius: 10px;
+
+	&:hover {
+		background-color: $cta-button-cocker-spaniel;
+		color: black;
+	}
+}
+
+@media only screen and (max-width: 485px) {
+	.find-header {
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			list-style: none;
+		}
+	}
+}
+
+.find-main {
+	padding: 100px;
+
+	h1 {
+		margin-bottom: 25px;
+	}
+
+	h2 {
+		margin-bottom: 25px;
+	}
+
+	p {
+		letter-spacing: 1px;
+		padding-bottom: 10px;
+	}
+}
+
+#ndis {
+	font-weight: 700;
+	font-style: italic;
+}
