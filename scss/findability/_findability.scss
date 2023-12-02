@@ -50,6 +50,10 @@
 	}
 }
 
+.find-subheading {
+	font-size: 34px;
+}
+
 .find-main {
 	max-width: 1400px;
 	margin: 170px auto 0 auto;
@@ -120,7 +124,8 @@
 
 .find-footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 400px;
 }
 
 .footer-logo {
