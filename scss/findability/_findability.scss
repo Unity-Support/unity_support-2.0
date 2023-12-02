@@ -4,6 +4,7 @@
 
 .find-header {
 	margin-top: 50px;
+	margin-bottom: 70px;
 
 	ul {
 		display: flex;
@@ -21,6 +22,10 @@
 			}
 		}
 	}
+}
+
+.find-company-title {
+	font-weight: 600;
 }
 
 #back-site {
@@ -46,10 +51,12 @@
 }
 
 .find-main {
-	padding: 100px;
+	max-width: 1400px;
+	margin: 170px auto 0 auto;
 
 	h1 {
 		margin-bottom: 25px;
+		font-size: 46px;
 	}
 
 	h2 {
@@ -58,11 +65,158 @@
 
 	p {
 		letter-spacing: 1px;
-		padding-bottom: 10px;
+		margin-bottom: 20px;
 	}
 }
 
 #ndis {
 	font-weight: 700;
 	font-style: italic;
+}
+
+// SEO Best Practices
+
+.SEO-container {
+	max-width: 1400px;
+	margin: 170px auto 0 auto;
+
+	h1 {
+		font-size: 46px;
+	}
+
+	h2 {
+		margin-bottom: 25px;
+		color: $green-nav-boston-terrier;
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+}
+
+.seo-hero {
+	margin-bottom: 80px;
+}
+
+.seo-content {
+	h3 {
+		font-size: 20px;
+		margin: 20px 0;
+	}
+
+	li {
+		font-size: 18px;
+	}
+}
+
+// FOOTER
+
+.find-footer {
+	padding: 80px 13% 70px;
+	margin-top: 130px;
+	color: rgb(0, 0, 0);
+	border-top: solid 2px $green-primary-beagle;
+}
+
+.find-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	width: 200px;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+
+	ul {
+		padding-left: 0;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.footer-content p {
+	color: $black-schnauzer;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1;
+	margin: 20px 0;
+}
+
+.footer-content h4 {
+	color: #0e0d0d;
+	margin-bottom: 1.5rem;
+	font-size: 20px;
+}
+
+.footer-content li {
+	margin-bottom: 16px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.footer-content li a {
+	display: block;
+	color: #121213;
+	font-size: 15px;
+	font-weight: 400;
+	transition: all 0.4s ease;
+}
+
+.footer-content li a:hover {
+	transform: translateY(-3px) translateX(-5px);
+	color: var(--yellow-main);
+}
+
+.icons a {
+	display: inline-block;
+	font-size: 22px;
+	margin-right: 17px;
+	transition: all 0.4s ease;
+}
+
+.icons a:hover {
+	transform: translateY(-5px);
+	color: #facf33;
+}
+
+@media (max-width: 1690px) {
+	footer {
+		padding: 50px 5% 40px;
+	}
+}
+
+// References
+
+.references {
+	display: flex;
+	flex-direction: column;
+	h4 {
+		font-size: 20px;
+		margin: 20px 0 10px 0;
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: 500;
+		color: darkgreen;
+	}
+}
+
+// Vocabulary
+
+dt {
+	font-size: 20px;
+	color: darkgreen;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+dd {
+	font-size: 18px;
+	margin-bottom: 20px;
 }
