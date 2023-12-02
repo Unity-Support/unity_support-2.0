@@ -7,7 +7,7 @@
 	padding: 20px 10% 50px 10%;
 
 	h2 {
-		margin: 30px 0 5px 0;
+		margin: 20px 0 5px 0;
 	}
 
 	a {
@@ -29,10 +29,14 @@
 	width: 100%;
 	padding: 20px 10% 50px 10%;
 
+	h2 {
+		font-size: 46px;
+	}
+
 	a {
 		text-decoration: none;
 		color: black;
-		font-size: 32px;
+		font-size: 24px;
 		letter-spacing: 1px;
 		-webkit-transition: color 0.5s ease-in;
 
@@ -45,5 +49,5 @@
 .findability-links {
 	display: flex;
 	flex-direction: column;
-	padding-top: 25px;
+	padding-top: 5px;
 }
