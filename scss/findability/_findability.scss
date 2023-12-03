@@ -45,12 +45,12 @@
 	}
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 1400px) {
 	.find-header {
 		ul {
 			display: flex;
-			flex-direction: column;
-			gap: 5px;
+			flex-direction: row;
+			gap: 30px;
 			list-style: none;
 		}
 	}
@@ -79,6 +79,12 @@
 	}
 }
 
+@media only screen and (max-width: 1400px) {
+	.find-main {
+		max-width: 1000px;
+	}
+}
+
 #ndis {
 	font-weight: 700;
 	font-style: italic;
@@ -101,6 +107,12 @@
 
 	p {
 		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.SEO-container {
+		max-width: 1000px;
 	}
 }
 
@@ -248,6 +260,12 @@ dd {
 
 	span {
 		font-weight: 600;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.about-container {
+		max-width: 1000px;
 	}
 }
 
