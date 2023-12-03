@@ -9,16 +9,22 @@
 	ul {
 		display: flex;
 		justify-content: center;
-		gap: 100px;
+		gap: 115px;
 		list-style: none;
 		a {
 			text-decoration: none;
 			color: black;
 			letter-spacing: 1px;
 			font-weight: 600;
+			display: block;
+
+			font-size: 18px;
+
+			transition: all 0.4s ease;
 
 			&:hover {
 				color: $green-nav-boston-terrier;
+				transform: translateY(-3px) translateX(-5px);
 			}
 		}
 	}
@@ -288,5 +294,10 @@ hr.style-two {
 .accessibility-container {
 	h2 {
 		color: black;
+		margin-bottom: 20px;
+	}
+
+	p {
+		padding-bottom: 20px;
 	}
 }
