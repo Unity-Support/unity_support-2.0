@@ -5,6 +5,13 @@
 	width: 850px;
 	margin: 50px auto;
 
+	h2 {
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-top: 50px;
+	}
+
 	h3 {
 		font-size: 20px;
 		font-weight: 400;
@@ -62,7 +69,7 @@
 
 	.card {
 		max-width: 450px;
-		background-color: #544f77;
+		// background-color: #544f77;
 		text-align: center;
 		border-radius: 8px;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -100,13 +107,13 @@
 		h1 {
 			font-size: 40px;
 			font-weight: 700;
-			color: #fff;
+			color: bl;
 			padding-bottom: 30px;
 		}
 
 		p {
 			font-size: 20px;
-			color: #fff;
+			color: black;
 			line-height: 2rem;
 			padding-bottom: 100px;
 		}
